@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
-const userRoutes = require("../server/routes/userRoutes");
-const conRoutes = require("../server/routes/ConversationRoutes");
-const mesRoutes = require("../server/routes/MessageRoutes");
+const userRoutes = require("./routes/userRoutes");
+const conRoutes = require("./routes/ConversationRoutes");
+const mesRoutes = require("./routes/MessageRoutes");
 mongoose.set('strictQuery',true);
 app.use(cors({
     origin:"http://localhost:3000",
