@@ -8,7 +8,7 @@ const conRoutes = require("./routes/ConversationRoutes");
 const mesRoutes = require("./routes/MessageRoutes");
 mongoose.set('strictQuery',true);
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://techventure.netlify.app/",
     methods:"GET,POST,PUT,DELETE",
     credentials:true
 }));
@@ -24,5 +24,5 @@ const middleWare = (res,req,next) => {
 }
 
 app.listen('5000',()=>{
-    console.log("On port 5000!!");
+    // console.log("On port 5000!!");
 });
