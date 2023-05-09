@@ -7,11 +7,11 @@ const userRoutes = require("./routes/userRoutes");
 const conRoutes = require("./routes/ConversationRoutes");
 const mesRoutes = require("./routes/MessageRoutes");
 mongoose.set('strictQuery',true);
-app.use(cors({
-    origin:"https://techventure.netlify.app/",
-    methods:"GET,POST,PUT,DELETE",
-    credentials:true
-}));
+// app.use(cors({
+//     origin:"https://techventure.netlify.app/",
+//     methods:"GET,POST,PUT,DELETE",
+//     credentials:true
+// }));
 require('./db/connection');
 app.use(express.json());
 app.use("/api/auth/",userRoutes);
