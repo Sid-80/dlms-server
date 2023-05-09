@@ -7,6 +7,7 @@ const userRoutes = require("./routes/userRoutes");
 const conRoutes = require("./routes/ConversationRoutes");
 const mesRoutes = require("./routes/MessageRoutes");
 mongoose.set('strictQuery',true);
+app.use(cors());
 // app.use(cors({
 //     origin:"https://techventure.netlify.app/",
 //     methods:"GET,POST,PUT,DELETE",
